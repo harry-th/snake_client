@@ -8,6 +8,9 @@ const setupInput = function(conn) {
     if (key === '\u0003') {
       process.exit();
     }
+    if (key === 'q') {
+      conn.write('Say: snakesnakesnakesnakesnakesnake');
+    }
     if (key === 'w') {
       conn.write("Move: up");
     } else  if (key === 's') {
